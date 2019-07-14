@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity_admin.ConsentLetter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundMain"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="7dp"
+                android:layout_margin="5dp"
+                android:elevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/text_heading2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/text_para"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:background="@color/colorWhite"
+                        android:layout_weight="1"
+                        android:scrollbars="vertical"
+                        android:padding="5dp"/>
+
+                    <ImageView
+                        android:id="@+id/button_sign"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="Sign"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview_witness_declaration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="7dp"
+                android:elevation="5dp"
+                android:visibility="gone"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_Witness_Declaration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Witness Declarartion here"
+                        android:padding="5dp"
+                        android:maxLength="250"
+                        android:background="@color/colorWhite"
+                        android:layout_margin="5dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/button_witness_sign"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="5dp"/>
+
+                        <ImageView
+                            android:id="@+id/button_witness2_sign"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="end"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="5dp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview_doctor_declaration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="7dp"
+                android:elevation="5dp"
+                android:visibility="gone"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_Doctor_Declaration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Doctor Declarartion here"
+                        android:padding="5dp"
+                        android:maxLength="250"
+                        android:background="@color/colorWhite"
+                        android:layout_margin="5dp" />
+
+                    <ImageView
+                        android:id="@+id/button_doctor_sign"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

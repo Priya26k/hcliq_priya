@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/colorLightBackground"
+        android:elevation="5dp"
+        android:background="@color/colorLightBackground"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/patientName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="17sp"/>
+
+                    <TextView
+                        android:id="@+id/ipdNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/hospitalPatientId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ipdStDateDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/ipdEndDateDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_ward_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/text_bed_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/patient_payment_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ipd_cl_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:layout_gravity="center"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circle_image_view_tick"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_check_black_24dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <Button
+                    android:id="@+id/button_sign_consent_letter"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/button_border"
+                    android:textColor="@color/colorWhite"
+                    android:text="Sign Consent Letter"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</android.support.v7.widget.CardView>

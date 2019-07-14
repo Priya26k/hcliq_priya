@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/CanvasLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Clear"
+                android:layout_margin="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/CanvasLayout"
+                android:textColor="@color/colorRed"
+                android:background="@drawable/button_border_transparent"/>
+
+        </RelativeLayout>
+        
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:layout_gravity="bottom"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/edit_relation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Relation"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_Save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Save"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_border"
+        android:textColor="@color/colorWhite" />
+
+</LinearLayout>

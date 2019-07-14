@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundMain"
+    tools:context=".activity_admin.ConsentLetterView"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="@color/colorLightBackground"/>
+
+    <Button
+        android:id="@+id/button_sign_of_patient"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Signature Of Patient"
+        android:textColor="@color/colorWhite"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_border"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="7dp"
+        android:backgroundTint="@color/colorWhite"
+        android:elevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLightBackground"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="20sp"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Name"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:padding="5dp"
+                    android:background="@color/colorWhite"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorLightBackground"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Relation"
+                    android:textSize="20sp"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/edit_Relation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Relation"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:background="@color/colorWhite" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        android:backgroundTint="@color/colorLightBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Witness Certification"
+                android:padding="5dp"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/edit_Witnes_Certification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@color/colorWhite"
+                android:hint="Witness Certification here"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        android:backgroundTint="@color/colorLightBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doctor Declaration"
+                android:padding="5dp"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/edit_DoctorDeclaration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@color/colorWhite"
+                android:hint="Doctor Declaration here"/>
+
+            <Button
+                android:id="@+id/button_sign"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Sign"
+                android:background="@drawable/button_border"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Submit"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button_border"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>

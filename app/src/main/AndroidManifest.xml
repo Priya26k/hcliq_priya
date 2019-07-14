@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hcliq_priya">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".activity_admin.IpdPatientList"
+            android:windowSoftInputMode="stateHidden">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".activity_admin.TreatmentHospitalStay"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+        <activity android:name=".activity_admin.IpdBedMaster"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity android:name=".activity_admin.ConsentLetterView"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity android:name=".activity_admin.IpdBedAllocation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity android:name=".activity_admin.PatientIPDHome"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity android:name=".activity_admin.BedAllocation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity android:name=".activity_admin.SignatureScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity android:name=".activity_admin.SignatureScreen1"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity android:name=".activity_admin.PatientIPDProfile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity android:name=".activity_admin.IpdDiagnosisReport"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity android:name=".activity_admin.ConsentLetterMaster"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity android:name=".activity_admin.OperationSchecule_IPD"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity android:name=".activity_admin.ConsentLetter"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity android:name=".activity_admin.AdmissionSummery"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity android:name=".activity_admin.TreatmentDischarge"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity android:name=".activity_admin.TreatmentOperationSubmit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity android:name=".activity_admin.TreatmentAddHospitalStay"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+    </application>
+
+</manifest>

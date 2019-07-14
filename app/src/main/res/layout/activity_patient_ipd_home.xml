@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_patient_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circle_image_view"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/hospital" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_patient_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:layout_marginTop="5dp"
+                            android:text="Patient Name " />
+
+                        <TextView
+                            android:id="@+id/text_patient_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:text="Patient Id "
+                            android:textSize="13sp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/gradient1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/card_ipd_patient_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            app:cardBackgroundColor="@color/colorWhite"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="10dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Patient IPD Profile"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:textColor="@color/colorRedTransparent"
+                                    android:gravity="center"/>
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/image_patient_ipd_profile"
+                                    android:layout_margin="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/card_bed_alloc"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            app:cardBackgroundColor="@color/colorWhite"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="10dp"
+                            android:layout_weight="1.5">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bed Allocation"
+                                    android:textColor="@color/colorRedTransparent"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:gravity="center"/>
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/image_bed_allocation"
+                                    android:layout_margin="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/card_admission_summary"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            app:cardBackgroundColor="@color/colorWhite"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="10dp"
+                            android:layout_weight="1.5">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Admission Summary"
+                                    android:textColor="@color/colorRedTransparent"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:gravity="center"/>
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/image_admission_summary"
+                                    android:layout_margin="5dp"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/card_upload_diag_report"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/colorWhite"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Upload Diagnosis report"
+                                    android:textColor="@color/colorRedTransparent"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:gravity="center"/>
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/image_upload_diag_report"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:padding="5dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_hospital_stay"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="10dp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Hospital Stay"
+                                android:textColor="@color/colorRedTransparent"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:gravity="center"/>
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/image_hospital_stay"
+                                android:layout_margin="5dp"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"/>
+
+                          </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_discharge"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="10dp"
+                        android:layout_weight="1.5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Discharge"
+                                android:textColor="@color/colorRedTransparent"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:gravity="center"/>
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/image_discharge"
+                                android:layout_margin="5dp"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_operation_sch"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="10dp"
+                        android:layout_weight="1.5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Operation Schedule"
+                                android:textColor="@color/colorRedTransparent"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:gravity="center"/>
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/image_operation_schedule"
+                                android:layout_margin="5dp"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_operation_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="10dp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Operation Summary"
+                                android:textColor="@color/colorRedTransparent"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:gravity="center"/>
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/image_operation_summary"
+                                android:layout_margin="5dp"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_consent_letter"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Consent Letter"
+                            android:textColor="@color/colorRedTransparent"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:gravity="center"/>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/image_consent_letter"
+                            android:layout_margin="5dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"/>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

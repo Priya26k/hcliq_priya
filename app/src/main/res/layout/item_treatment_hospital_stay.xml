@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linear_layout1"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorRedBackground"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/hospital_stay_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="Date " />
+
+                <TextView
+                    android:id="@+id/text_hospital_stay_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#85FFFFFF"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/procedure_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorLightBackground"
+                    android:padding="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="Procedure Details"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_procedure_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#85FFFFFF"
+                    android:padding="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/treatment_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorLightBackground"
+                    android:padding="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="Treatment Details"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_treatment_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#08FFFFFF"
+                    android:padding="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/operation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/backgroundMain"
+                    android:padding="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="Operation"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorLightBackground"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/op_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@color/colorLightBackground"
+                        android:gravity="center_vertical"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="Name" />
+
+                    <TextView
+                        android:id="@+id/text_op_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="#85FFFFFF"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorLightBackground"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/start_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@color/colorLightBackground"
+                        android:gravity="center_vertical"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="Start Time" />
+
+                    <TextView
+                        android:id="@+id/text_start_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="#85FFFFFF"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorLightBackground"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/end_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@color/colorLightBackground"
+                        android:gravity="center_vertical"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="End Time" />
+
+                    <TextView
+                        android:id="@+id/text_end_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="#85FFFFFF"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/doctor_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorLightBackground"
+                    android:padding="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text=" Doctor's Note "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_doctor_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#85FFFFFF"
+                    android:padding="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/text_created_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="10dp"
+        android:paddingEnd="5dp"
+        android:gravity="end"/>
+
+</LinearLayout>

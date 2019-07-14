@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_admin.IpdBedMaster"
+    android:background="@color/backgroundMain"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightBackground"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/colorWhite">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@color/colorLightBackground"
+               android:layout_weight="2"
+               android:textSize="15sp"
+               android:gravity="center_vertical"
+               android:padding="5dp"
+               android:text="Facility Name"/>
+
+           <Spinner
+               android:id="@+id/spinner_IPD_facility_name"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_weight="1">
+
+           </Spinner>
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorLightBackground"
+                android:layout_weight="2"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="Unit Name"/>
+
+            <Spinner
+                android:id="@+id/spinner_unit_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1">
+
+            </Spinner>
+
+        </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorWhite"
+        android:layoutAnimation="@anim/layout_anim_right_to_left">
+
+    </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_add_bed"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_border"
+        android:textColor="@color/colorWhite"
+        android:text="Add bed"/>
+
+</LinearLayout>

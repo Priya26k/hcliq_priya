@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/backgroundMain">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/colorLightBackground"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_patient_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:paddingEnd="5dp"/>
+
+                    <TextView
+                        android:id="@id/text_patient_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/colorLightBackground"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp">
+
+            <EditText
+                android:id="@+id/text_operation_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="Operation Name "
+                android:textColor="@color/colorRed"
+                android:textStyle="bold"
+                android:paddingStart="5dp"
+                android:background="@color/colorLightBackground"
+                android:paddingEnd="5dp"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/colorLightBackground"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:layout_weight="1.5"/>
+
+                    <EditText
+                        android:id="@+id/edit_operation_schedule_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_date_range_black_24dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        android:background="@color/colorWhite"
+                        android:editable="false"
+                        android:focusable="false"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Start Time"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:layout_weight="1.5"/>
+
+                    <EditText
+                        android:id="@+id/edit_operation_schedule_start_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_access_time_black_24dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorWhite"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:padding="5dp"
+                        android:focusable="false"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Expected Duration"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:layout_weight="1.5"/>
+
+                    <EditText
+                        android:id="@+id/edit_expected_duration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/colorWhite"
+                        android:padding="5dp"
+                        android:inputType="text"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Save"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button_border"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

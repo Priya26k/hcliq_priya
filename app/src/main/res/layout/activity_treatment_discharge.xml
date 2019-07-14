@@ -1,0 +1,221 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_admin.TreatmentDischarge">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorLightBackground">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/backgroundMain"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="2dp"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_patient_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="5dp"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:paddingEnd="5dp"/>
+
+                        <TextView
+                            android:id="@id/text_patient_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/colorLightBackground">
+
+                    <TextView
+                        android:id="@+id/text_treatment_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Treatment Type"
+                        android:layout_gravity="center"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1.5"/>
+
+                    <Spinner
+                        android:id="@+id/spinner_treatment_type"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/colorLightBackground">
+
+                    <TextView
+                        android:id="@+id/text_Date_of_discharge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        android:text="Date Of Discharge"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/edit_text_date_of_discharge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_date_range_black_24dp"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:background="@color/colorWhite"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/colorLightBackground">
+
+                    <TextView
+                        android:id="@+id/text_time_of_discharge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Time Of Discharge"
+                        android:layout_weight="1.5"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"/>
+
+                    <EditText
+                        android:id="@+id/edit_text_time_of_discharge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:drawableEnd="@drawable/ic_access_time_black_24dp"
+                        android:padding="3dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:background="@color/colorWhite"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_advice_on_discharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:layout_marginTop="3dp"
+                    android:text="Advice On Discharge"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edit_text_advice_on_discharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/colorWhite"
+                    android:gravity="top"
+                    android:hint="Advice On Discharge"
+                    android:inputType="text"
+                    android:paddingStart="5dp"
+                    android:minLines="3"/>
+
+                <TextView
+                    android:id="@+id/text_doctor_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Doctor Notes"
+                    android:layout_marginTop="3dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:background="@color/colorWhite"/>
+
+                <EditText
+                    android:id="@+id/edit_text_doctor_notes"
+                    android:gravity="top"
+                    android:minLines="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:inputType="text"
+                    android:hint="Doctor Notes"
+                    android:layout_marginBottom="3dp"
+                    android:paddingStart="5dp"
+                    android:background="@color/colorWhite"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Save"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_border"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

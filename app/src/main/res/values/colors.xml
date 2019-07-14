@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <color name="colorPrimary">#EA3E52</color>
+        <color name="colorPrimaryDark">#FF3E52</color><!--008577-->
+        <color name="colorAccent">#454444</color>
+        <color name="colorGray">#666464</color>
+        <color name="colorAccent1">#D81B60</color>
+
+        <color name="black_overlay">#66000000</color>
+        <color name="black_overlay1">#2a999797</color>
+        <color name="backgroundMain">#bcbebe</color>
+
+        <color name="colorRedTransparent">#88EA3E52</color>
+        <color name="colorRedBackground">#edf5abb3</color>
+        <color name="colorLightBackground">#e7e5e5</color>
+
+        <color name="colorWhite">#FFF</color>
+        <color name="colorBlack">#000</color>
+        <color name="colorRed">#EA3E52</color>
+
+        <color name="colorGreen">#2BA1A0</color>
+        <color name="colorGreenLight">#D8ECE0</color>
+        <color name="colorGreenLight1">#ADD9D0</color>
+
+        <color name="colorGreenLightTransparent">#AAD8ECE0</color>
+        <color name="colorTransparent1">#B2313131</color>
+        <color name="colorGreenLightTransparent1">#AAADD9D0</color>
+        <color name="colorGreenTransparent">#442BA1A0</color>
+        <color name="colorGreenTransparent1">#38b159</color>
+        <color name="colorYellowTransparent">#AAdaba63</color>
+        <color name="colorTextDark">#2e7c7c</color>
+        <color name="colorBlue">#094556</color>
+
+        <color name="colorDarkGreen">#3E9979</color>
+        <color name="colorDarkBlue">#5075D1</color>
+        <color name="colorOrange">#FF5722</color>
+
+
+    </resources>
